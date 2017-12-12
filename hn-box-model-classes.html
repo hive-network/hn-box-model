@@ -1,0 +1,222 @@
+<!--
+A set of swell and bump classes that let you specify box model properties directly in markup.
+You must include this file in every element that needs to use them.
+
+Sample use:
+
+    <link rel="import" href="../hn-box-model/hn-box-model-classes.html">
+    <style is="custom-style" include="hn-swell hn-bump"></style>
+
+    <div class="swell_sm bump_horizontal-auto">
+      <div>8px padding , margin left and right auto</div>
+    </div>
+
+The following imports are available:
+ - hn-swell
+ - hn-bump
+-->
+
+<link rel="import" href="../polymer/polymer.html">
+
+<!-- padding-->
+<dom-module id="hn-swell">
+  <template>
+    <style>
+      .swell_sm {
+        padding: 8px;
+      }
+
+      .swell_md {
+        padding: 16px;
+      }
+
+      .swell_lg {
+        padding: 32px;
+      }
+
+      .swell_right-sm {
+        padding-right: 8px;
+      }
+
+      .swell_right-md {
+        padding-right: 16px;
+      }
+
+      .swell_all-lg {
+        padding: 32px;
+      }
+
+      .swell_top-lg {
+        padding-top: 32px;
+      }
+
+      .swell_top-md {
+        padding-top: 16px;
+      }
+
+      .swell_top-sm {
+        padding-top: 8px;
+      }
+
+      .swell_vertical-md {
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+
+      .swell_vertical-sm {
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+
+      .swell_horizontal-md {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+
+      .swell_vertical-lg {
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
+
+      .swell_horizontal-sm {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    </style>
+  </template>
+</dom-module>
+
+<!-- margin -->
+<dom-module id="hn-bump">
+  <template>
+    <style>
+      .bump_clear {
+        margin: 0;
+      }
+
+      .bump_clear-top {
+        margin-top: 0;
+      }
+
+      .bump_horizontal-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .bump_xs {
+        margin: 4px;
+      }
+
+      .bump_sm {
+        margin: 8px;
+      }
+
+      .bump_md {
+        margin: 16px;
+      }
+
+      .bump_lg {
+        margin: 32px;
+      }
+
+      .bump_xl {
+        margin: 64px;
+      }
+
+      .bump_vertical-xs {
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+
+      .bump_vertical-sm {
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      .bump_vertical-md {
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      .bump_vertical-lg {
+        margin-top: 32px;
+        margin-bottom: 32px;
+      }
+
+      .bump_vertical-xl {
+        margin-top: 64px;
+        margin-bottom: 64px;
+      }
+
+      .bump_top-xs {
+        margin-top: 4px;
+      }
+
+      .bump_top-sm {
+        margin-top: 8px;
+      }
+
+      .bump_top-md {
+        margin-top: 16px;
+      }
+
+      .bump_top-lg {
+        margin-top: 32px;
+      }
+
+      .bump_top-xl {
+        margin-top: 64px;
+      }
+
+      .bump_bottom-xs {
+        margin-bottom: 4px;
+      }
+
+      .bump_bottom-sm {
+        margin-bottom: 8px;
+      }
+
+      .bump_bottom-md {
+        margin-bottom: 16px;
+      }
+
+      .bump_bottom-lg {
+        margin-bottom: 32px;
+      }
+
+      .bump_bottom-xl {
+        margin-bottom: 64px;
+      }
+
+      .bump_left-sm {
+        margin-left: 8px;
+      }
+
+      .bump_left-md {
+        margin-left: 16px;
+      }
+
+      .bump_left-lg {
+        margin-left: 32px;
+      }
+
+      .bump_right-xs {
+        margin-right: 4px;
+      }
+
+      .bump_right-sm {
+        margin-right: 8px;
+      }
+
+      .bump_right-md {
+        margin-right: 16px;
+      }
+
+      .bump_right-lg {
+        margin-right: 32px;
+      }
+    </style>
+  </template>
+</dom-module>
