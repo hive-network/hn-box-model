@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>hn-box-model test</title>
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="../../web-component-tester/browser.js"></script>
+
+  <link rel="import" href="../hn-box-model-classes.html">
+  <style is="custom-style" include="hn-bump hn-swell">
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .myclass {
+      margin: 4px;
+    }
+
+    .container {
+      width: 300px;
+      min-height: 50px;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <test-fixture id="basic">
+    <template>
+      <div class="container swell_sm bump_top-sm">8x padding and 8px margin</div>
+    </template>
+  </test-fixture>
+
+  <script>
+    suite('basic', () => {
+      suiteSetup(function () {
+        // In Polymer 2.0, custom-style is lazy, and won't boot until a
+        // Polymer element is used (and these tests don't have a Polymer element).
+        if (Polymer.Element) {
+          window.ShadyCSS.styleDocument();
+        }
+      });
+
+      var element;
+
+      setup(function () {
+        element = fixture('basic');
+      });
+
+
+      test('setting a property on the element works', () => {
+        element.classList.add('horizontal');
+        // Create a test fixture
+        const elementShadowRoot = element.shadowRoot;
+        // const elementDiv = elementShadowRoot.querySelector('#testDiv');
+        console.log(' element -->> ' + element);
+        const padding = window.getComputedStyle(element, null).getPropertyValue('padding');
+        const padding2 = element.style.padding;
+
+        const margin = window.getComputedStyle(element, null).getPropertyValue('margin');
+        const margin2 = element.style.margin;
+        assert.equal(padding, '8px');
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>
