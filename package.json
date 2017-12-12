@@ -1,0 +1,28 @@
+{
+  "name": "hn-box-model",
+  "version": "1.0.0",
+  "description": "Polymer Web Component used to bump stuff around in the ui - e.g. .bump_vertical-xs {margin-top: 4px; margin-bottom: 4px; }",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hive-network/hn-box-model.git"
+  },
+  "keywords": [
+    "Polymer",
+    "Web",
+    "Component",
+    "UI"
+  ],
+  "author": "hive network",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hive-network/hn-box-model/issues"
+  },
+  "homepage": "https://github.com/hive-network/hn-box-model#readme"
+}
