@@ -22,68 +22,241 @@ The following imports are available:
 <dom-module id="hn-swell">
   <template>
     <style>
+
+      :root {
+        --xxs: 5px;
+        --xs: 10px;
+        --sm: 20px;
+        --md: 30px;
+        --lg: 50px;
+        --xl: 70px;
+        --xxl: 100px;
+      }
+
+      /* padding all sides */
+
+      .swell_xxs {
+        padding: var(--xxs);
+      }
+
+      .swell_xs {
+        padding: var(--xs);
+      }
+
       .swell_sm {
-        padding: 8px;
+        padding: var(--sm);
       }
 
       .swell_md {
-        padding: 16px;
+        padding: var(--md);
       }
 
       .swell_lg {
-        padding: 32px;
+        padding: var(--lg);
       }
 
-      .swell_right-sm {
-        padding-right: 8px;
+      .swell_xl {
+        padding: var(--xl);
       }
 
-      .swell_right-md {
-        padding-right: 16px;
+      .swell_xxl {
+        padding: var(--xxl);
       }
 
-      .swell_all-lg {
-        padding: 32px;
+      /* padding top */
+
+      .swell_top-xxs {
+        padding-top: var(--xxs);
       }
 
-      .swell_top-lg {
-        padding-top: 32px;
-      }
-
-      .swell_top-md {
-        padding-top: 16px;
+      .swell_top-xs {
+        padding-top: var(--xs);
       }
 
       .swell_top-sm {
-        padding-top: 8px;
+        padding-top: var(--sm);
       }
 
-      .swell_vertical-md {
-        padding-top: 16px;
-        padding-bottom: 16px;
+      .swell_top-md {
+        padding-top: var(--md);
       }
 
-      .swell_vertical-sm {
-        padding-top: 8px;
-        padding-bottom: 8px;
+      .swell_top-lg {
+        padding-top: var(--lg);
       }
 
-
-      .swell_horizontal-md {
-        padding-left: 16px;
-        padding-right: 16px;
+      .swell_top-xl {
+        padding-top: var(--xl);
       }
 
+      .swell_top-xxl {
+        padding-top: var(--xxl);
+      }
 
-      .swell_vertical-lg {
-        padding-top: 32px;
-        padding-bottom: 32px;
+      /* padding right */
+
+      .swell_right-xxs {
+        padding-right: var(--xxs);
+      }
+
+      .swell_right-xs {
+        padding-right: var(--xs);
+      }
+
+      .swell_right-sm {
+        padding-right: var(--sm);
+      }
+
+      .swell_right-md {
+        padding-right: var(--md);
+      }
+
+      .swell_right-lg {
+        padding-right: var(--lg);
+      }
+
+      .swell_right-xl {
+        padding-right: var(--xl);
+      }
+
+      .swell_right-xxl {
+        padding-right: var(--xxl);
+      }
+
+      /* padding bottom */
+
+      .swell_bottom-xxs {
+        padding-bottom: var(--xxs);
+      }
+
+      .swell_bottom-xs {
+        padding-bottom: var(--xs);
+      }
+
+      .swell_bottom-sm {
+        padding-bottom: var(--sm);
+      }
+
+      .swell_bottom-md {
+        padding-bottom: var(--md);
+      }
+
+      .swell_bottom-lg {
+        padding-bottom: var(--lg);
+      }
+
+      .swell_bottom-xl {
+        padding-bottom: var(--xl);
+      }
+
+      .swell_bottom-xxl {
+        padding-bottom: var(--xxl);
+      }
+
+      /* padding left */
+
+      .swell_left-xxs {
+        padding-left: var(--xxs);
+      }
+
+      .swell_left-xs {
+        padding-left: var(--xs);
+      }
+
+      .swell_left-sm {
+        padding-left: var(--sm);
+      }
+
+      .swell_left-md {
+        padding-left: var(--md);
+      }
+
+      .swell_left-lg {
+        padding-left: var(--lg);
+      }
+
+      .swell_left-xl {
+        padding-left: var(--xl);
+      }
+
+      .swell_left-xxl {
+        padding-left: var(--xxl);
+      }
+
+      /* padding horizontal */
+
+      .swell_horizontal-xxs {
+        padding-left: var(--xxs);
+        padding-right: var(--xxs);
+      }
+
+      .swell_horizontal-xs {
+        padding-left: var(--xs);
+        padding-right: var(--xs);
       }
 
       .swell_horizontal-sm {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-left: var(--sm);
+        padding-right: var(--sm);
       }
+
+      .swell_horizontal-md {
+        padding-left: var(--md);
+        padding-right: var(--md);
+      }
+
+      .swell_horizontal-lg {
+        padding-left: var(--lg);
+        padding-right: var(--lg);
+      }
+
+      .swell_horizontal-xl {
+        padding-left: var(--xl);
+        padding-right: var(--xl);
+      }
+
+      .swell_horizontal-xxl {
+        padding-left: var(--xxl);
+        padding-right: var(--xxl);
+      }
+
+      /* padding vertical */
+
+      .swell_vertical-xxs {
+        padding-top: var(--xxs);
+        padding-bottom: var(--xxs);
+      }
+
+      .swell_vertical-xs {
+        padding-top: var(--xs);
+        padding-bottom: var(--xs);
+      }
+
+      .swell_vertical-sm {
+        padding-top: var(--sm);
+        padding-bottom: var(--sm);
+      }
+
+      .swell_vertical-md {
+        padding-top: var(--md);
+        padding-bottom: var(--md);
+      }
+
+      .swell_vertical-lg {
+        padding-top: var(--lg);
+        padding-bottom: var(--lg);
+      }
+
+      .swell_vertical-xl {
+        padding-top: var(--xl);
+        padding-bottom: var(--xl);
+      }
+
+      .swell_vertical-xxl {
+        padding-top: var(--xxl);
+        padding-bottom: var(--xxl);
+      }
+
     </style>
   </template>
 </dom-module>
@@ -92,12 +265,201 @@ The following imports are available:
 <dom-module id="hn-bump">
   <template>
     <style>
-      .bump_clear {
-        margin: 0;
+      :root {
+        --xxs: 5px;
+        --xs: 10px;
+        --sm: 20px;
+        --md: 30px;
+        --lg: 50px;
+        --xl: 70px;
+        --xxl: 100px;
       }
 
-      .bump_clear-top {
-        margin-top: 0;
+      /* margin all sides */
+
+      .bump_xxs {
+        margin: var(--xxs);
+      }
+
+      .bump_xs {
+        margin: var(--xs);
+      }
+
+      .bump_sm {
+        margin: var(--sm);
+      }
+
+      .bump_md {
+        margin: var(--md);
+      }
+
+      .bump_lg {
+        margin: var(--lg);
+      }
+
+      .bump_xl {
+        margin: var(--xl);
+      }
+
+      .bump_xxl {
+        margin: var(--xxl);
+      }
+
+      /* margin top */
+
+      .bump_top-xxs {
+        margin-top: var(--xxs);
+      }
+
+      .bump_top-xs {
+        margin-top: var(--xs);
+      }
+
+      .bump_top-sm {
+        margin-top: var(--sm);
+      }
+
+      .bump_top-md {
+        margin-top: var(--md);
+      }
+
+      .bump_top-lg {
+        margin-top: var(--lg);
+      }
+
+      .bump_top-xl {
+        margin-top: var(--xl);
+      }
+
+      .bump_top-xxl {
+        margin-top: var(--xxl);
+      }
+
+      /* margin right */
+
+      .bump_right-xxs {
+        margin-right: var(--xxs);
+      }
+
+      .bump_right-xs {
+        margin-right: var(--xs);
+      }
+
+      .bump_right-sm {
+        margin-right: var(--sm);
+      }
+
+      .bump_right-md {
+        margin-right: var(--md);
+      }
+
+      .bump_right-lg {
+        margin-right: var(--lg);
+      }
+
+      .bump_right-xl {
+        margin-right: var(--xl);
+      }
+
+      .bump_right-xxl {
+        margin-right: var(--xxl);
+      }
+
+      /* margin bottom */
+
+      .bump_bottom-xxs {
+        margin-bottom: var(--xxs);
+      }
+
+      .bump_bottom-xs {
+        margin-bottom: var(--xs);
+      }
+
+      .bump_bottom-sm {
+        margin-bottom: var(--sm);
+      }
+
+      .bump_bottom-md {
+        margin-bottom: var(--md);
+      }
+
+      .bump_bottom-lg {
+        margin-bottom: var(--lg);
+      }
+
+      .bump_bottom-xl {
+        margin-bottom: var(--xl);
+      }
+
+      .bump_bottom-xxl {
+        margin-bottom: var(--xxl);
+      }
+
+      /* margin left */
+
+      .bump_left-xxs {
+        margin-left: var(--xxs);
+      }
+
+      .bump_left-xs {
+        margin-left: var(--xs);
+      }
+
+      .bump_left-sm {
+        margin-left: var(--sm);
+      }
+
+      .bump_left-md {
+        margin-left: var(--md);
+      }
+
+      .bump_left-lg {
+        margin-left: var(--lg);
+      }
+
+      .bump_left-xl {
+        margin-left: var(--xl);
+      }
+
+      .bump_left-xxl {
+        margin-left: var(--xxl);
+      }
+
+      /* margin horizontal */
+
+      .bump_horizontal-xxs {
+        margin-left: var(--xxs);
+        margin-right: var(--xxs);
+      }
+
+      .bump_horizontal-xs {
+        margin-left: var(--xs);
+        margin-right: var(--xs);
+      }
+
+      .bump_horizontal-sm {
+        margin-left: var(--sm);
+        margin-right: var(--sm);
+      }
+
+      .bump_horizontal-md {
+        margin-left: var(--md);
+        margin-right: var(--md);
+      }
+
+      .bump_horizontal-lg {
+        margin-left: var(--lg);
+        margin-right: var(--lg);
+      }
+
+      .bump_horizontal-xl {
+        margin-left: var(--xl);
+        margin-right: var(--xl);
+      }
+
+      .bump_horizontal-xxl {
+        margin-left: var(--xxl);
+        margin-right: var(--xxl);
       }
 
       .bump_horizontal-auto {
@@ -105,117 +467,41 @@ The following imports are available:
         margin-right: auto;
       }
 
-      .bump_xs {
-        margin: 4px;
-      }
+      /* margin vertical */
 
-      .bump_sm {
-        margin: 8px;
-      }
-
-      .bump_md {
-        margin: 16px;
-      }
-
-      .bump_lg {
-        margin: 32px;
-      }
-
-      .bump_xl {
-        margin: 64px;
+      .bump_vertical-xxs {
+        margin-top: var(--xxs);
+        margin-bottom: var(--xxs);
       }
 
       .bump_vertical-xs {
-        margin-top: 4px;
-        margin-bottom: 4px;
+        margin-top: var(--xs);
+        margin-bottom: var(--xs);
       }
 
       .bump_vertical-sm {
-        margin-top: 8px;
-        margin-bottom: 8px;
+        margin-top: var(--sm);
+        margin-bottom: var(--sm);
       }
 
       .bump_vertical-md {
-        margin-top: 16px;
-        margin-bottom: 16px;
+        margin-top: var(--md);
+        margin-bottom: var(--md);
       }
 
       .bump_vertical-lg {
-        margin-top: 32px;
-        margin-bottom: 32px;
+        margin-top: var(--lg);
+        margin-bottom: var(--lg);
       }
 
       .bump_vertical-xl {
-        margin-top: 64px;
-        margin-bottom: 64px;
+        margin-top: var(--xl);
+        margin-bottom: var(--xl);
       }
 
-      .bump_top-xs {
-        margin-top: 4px;
-      }
-
-      .bump_top-sm {
-        margin-top: 8px;
-      }
-
-      .bump_top-md {
-        margin-top: 16px;
-      }
-
-      .bump_top-lg {
-        margin-top: 32px;
-      }
-
-      .bump_top-xl {
-        margin-top: 64px;
-      }
-
-      .bump_bottom-xs {
-        margin-bottom: 4px;
-      }
-
-      .bump_bottom-sm {
-        margin-bottom: 8px;
-      }
-
-      .bump_bottom-md {
-        margin-bottom: 16px;
-      }
-
-      .bump_bottom-lg {
-        margin-bottom: 32px;
-      }
-
-      .bump_bottom-xl {
-        margin-bottom: 64px;
-      }
-
-      .bump_left-sm {
-        margin-left: 8px;
-      }
-
-      .bump_left-md {
-        margin-left: 16px;
-      }
-
-      .bump_left-lg {
-        margin-left: 32px;
-      }
-
-      .bump_right-xs {
-        margin-right: 4px;
-      }
-
-      .bump_right-sm {
-        margin-right: 8px;
-      }
-
-      .bump_right-md {
-        margin-right: 16px;
-      }
-
-      .bump_right-lg {
-        margin-right: 32px;
+      .bump_vertical-xxl {
+        margin-top: var(--xxl);
+        margin-bottom: var(--xxl);
       }
     </style>
   </template>
